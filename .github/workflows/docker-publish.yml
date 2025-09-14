@@ -28,4 +28,7 @@ jobs:
           context: ./go-api
           file: ./go-api/Dockerfile
           push: true
-          tags: krisb20/multi-container-go-app:latest
+          tags: |
+            krisb20/multi-container-go-app:latest
+            krisb20/multi-container-go-app:${{ github.sha }}
+            krisb20/multi-container-go-app:${{ github.ref_name }}
