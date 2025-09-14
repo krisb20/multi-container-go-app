@@ -1,0 +1,14 @@
+# Go
+/bin/
+/main
+
+# Dependency directories
+vendor/
+
+# OS files
+.DS_Store
+
+# Docker
+*.log
+*.env
+.env.*
